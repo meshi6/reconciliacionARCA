@@ -1,10 +1,10 @@
-# Conciliación Facturas ↔ Ventas
+# 🧾 Conciliación Facturas ↔ Ventas
 
 Un método para conciliar los comprobantes que emitiste en ARCA con tus propios registros de ventas, sea una planilla o un sistema. Sirve para encontrar ventas cobradas sin factura, facturas sin venta y errores de carga, sin falsas alarmas. Sin importar qué vendés, dónde y cómo cobrás. Este ejemplo tiene varios servicios de distintos precios y un punto de venta online.
 
 ---
 
-## 1. Qué necesitás
+## 1. 📥 Qué necesitás
 
 | Input | Qué es | Datos clave |
 |---|---|---|
@@ -18,7 +18,7 @@ No edites los originales. Trabajá sobre copias y dejá el resultado en un archi
 
 ---
 
-## 2. Definí el alcance
+## 2. 🎯 Definí el alcance
 
 1. **Fecha de corte:** la del primer comprobante emitido. Una venta anterior no puede tener factura en este período; queda afuera y *no* cuenta como «factura faltante».
 2. **Sólo ventas cobradas.**
@@ -29,7 +29,7 @@ Anotá los conteos: los vas a necesitar para cerrar los totales.
 
 ---
 
-## 3. Normalizá antes de conciliar
+## 3. 🧹 Normalizá antes de conciliar
 
 Casi todos los errores salen de este paso.
 
@@ -41,7 +41,7 @@ Casi todos los errores salen de este paso.
 
 ---
 
-## 4. Conciliá, en este orden
+## 4. 🔗 Conciliá, en este orden
 
 Una factura que ya matcheó sale de la lista y no puede matchear con otra venta.
 
@@ -55,41 +55,41 @@ Anotá en cada coincidencia qué regla la encontró, para que se vea qué tan fi
 
 ---
 
-## 5. Clasificá lo que sobra
+## 5. 🗂️ Clasificá lo que sobra
 
 | Qué sobra | Gravedad |
 |---|---|
-| Una misma referencia de pago en ventas de **dos clientes distintos** | **Alta**: casi siempre a uno le pisaron el dato y aparece también como cobrado sin factura |
-| Venta cobrada sin factura | **Alta** |
-| Factura sin venta, por un importe que no está en la lista de precios | **Media**: buscá la referencia en tu medio de cobro |
-| Factura a un nombre que no está en tus registros | **Media**: suele ser alguien que pagó por otra persona |
-| Consumidor final conciliado sólo por fecha e importe | **Media** |
-| Referencia vacía o mal copiada en tus registros | **Baja**: indicá el valor correcto |
-| Nota de crédito seguida de una factura reemitida | **Baja**: anotala para que nadie la vuelva a levantar |
+| Una misma referencia de pago en ventas de **dos clientes distintos** | 🔴 **Alta**: casi siempre a uno le pisaron el dato y aparece también como cobrado sin factura |
+| Venta cobrada sin factura | 🔴 **Alta** |
+| Factura sin venta, por un importe que no está en la lista de precios | 🟡 **Media**: buscá la referencia en tu medio de cobro |
+| Factura a un nombre que no está en tus registros | 🟡 **Media**: suele ser alguien que pagó por otra persona |
+| Consumidor final conciliado sólo por fecha e importe | 🟡 **Media** |
+| Referencia vacía o mal copiada en tus registros | 🟢 **Baja**: indicá el valor correcto |
+| Nota de crédito seguida de una factura reemitida | 🟢 **Baja**: anotala para que nadie la vuelva a levantar |
 
 **Antes de marcar, fijate:** dos facturas a la misma persona suelen ser dos compras; una nota de crédito más una factura nueva es una corrección bien hecha; y un mail de pago distinto al de tu registro es la misma persona con otra cuenta.
 
 ---
 
-## 6. Cerrá los totales
+## 6. 🧮 Cerrá los totales
 
 Cada comprobante tiene que caer en **un solo grupo**: conciliado, de otro contribuyente, sin identificar o nota de crédito. La **cantidad** y el **importe** tienen que dar igual que la exportación; si no, hay uno contado dos veces o uno perdido. Hacé lo mismo al revés con las ventas cobradas: cada una conciliada, sin costo o marcada.
 
 ---
 
-## 7. El resultado
+## 7. 📊 El resultado
 
 Un `.xlsx` nuevo con una pestaña **Discrepancias** (una fila por hallazgo: gravedad, qué pasa, cliente, importe, detalle y **qué hacer**, ordenada por gravedad), las pestañas de apoyo que hagan falta, y un **Log** con qué se encontró y por qué el resultado da lo que da. Cada «qué hacer» tiene que ser concreto: qué registro, qué campo, qué valor.
 
 ---
 
-## 8. Privacidad
+## 8. 🔒 Privacidad
 
 Los originales y el resultado tienen nombres, CUIT, domicilios y mails. Dejalos **fuera del control de versiones** y, si compartís el método, usá ejemplos inventados.
 
 ---
 
-## Checklist
+## 📋 Checklist
 
 - [ ] Originales copiados, nunca editados
 - [ ] Corte en el primer comprobante; ventas sin costo y otros contribuyentes separados
