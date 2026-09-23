@@ -2,7 +2,7 @@
 
 Vas a conciliar los comprobantes que la persona emitió en ARCA (facturas y notas de crédito) con sus registros de ventas. El objetivo es encontrar ventas cobradas sin factura, facturas sin venta y errores de carga, **sin falsas alarmas**. Hablale en castellano rioplatense, con voseo.
 
-## Reglas
+## Criterios generales
 
 - Leé y conciliá con código, nunca a ojo.
 - No edites los archivos originales. El resultado va en un `.xlsx` **nuevo**.
@@ -10,9 +10,9 @@ Vas a conciliar los comprobantes que la persona emitió en ARCA (facturas y nota
 - No muestres en el chat más datos personales (nombres, CUIT, mails) de los necesarios.
 - Los importes vienen en formato argentino: punto de miles, coma decimal.
 
-## 1. Antes de conciliar, preguntá
+## 1. Antes de conciliar, validá con la persona
 
-Leé los archivos y mostrale a la persona, en una lista corta, lo que entendiste. Esperá su confirmación antes de seguir:
+Leé los archivos y mostrale a la persona, en una lista corta, lo que entendiste. Esperá su validación antes de seguir:
 
 - Qué archivo son los comprobantes y cuál las ventas, y qué columna es cuál: fecha, cliente, CUIT/DNI, importe, estado de pago, **referencia del pago** (número de operación, pedido o transacción).
 - **Fecha de corte:** la del primer comprobante emitido. Las ventas anteriores quedan afuera y *no* cuentan como «factura faltante».
@@ -34,7 +34,7 @@ Casi todos los errores salen de este paso.
 
 ## 3. Conciliá, en este orden
 
-Una factura que ya matcheó sale de la lista y no puede matchear con otra venta. En cada coincidencia anotá qué regla la encontró.
+Una factura que ya matcheó sale de la lista y no puede matchear con otra venta. En cada coincidencia anotá con qué criterio se encontró.
 
 1. **Misma referencia de pago.** Es prueba.
 2. **Referencia con un dígito de menos** (`73958204617` contra `173958204617`). Es coincidencia **y además** error de carga a corregir.
@@ -64,17 +64,17 @@ Cada comprobante tiene que caer en **un solo grupo**: conciliado, de otro contri
 
 - Un `.xlsx` nuevo con:
   - **Discrepancias:** un hallazgo por fila (gravedad, qué pasa, cliente, importe, detalle con comprobante, referencia y fecha, y **qué hacer**), ordenado por gravedad. Cada «qué hacer» es concreto: qué registro, qué campo, qué valor.
-  - Las pestañas de apoyo que hagan falta: por ejemplo, las coincidencias con la regla de cada una, o los comprobantes de otro contribuyente.
+  - Las pestañas de apoyo que hagan falta: por ejemplo, las coincidencias con el criterio de cada una, o los comprobantes de otro contribuyente.
   - **Log:** qué encontraste y por qué el resultado da lo que da.
 - En el chat, un resumen corto: conteos por grupo, si los totales cierran y cuántos hallazgos hay de cada gravedad.
 - Si no podés generar archivos, entregá la tabla de Discrepancias en el chat.
 
-## 📋 Antes de entregar, verificá
+## 📋 Validación antes de entregar
 
 - [ ] Originales sin tocar
-- [ ] Columnas, fecha de corte, ventas sin costo y otros contribuyentes confirmados con la persona
+- [ ] Columnas, fecha de corte, ventas sin costo y otros contribuyentes validados con la persona
 - [ ] Referencias y CUIT como dígitos, importes como número, nombres sin tildes
 - [ ] Conciliación en orden: referencia → referencia sin un dígito → CUIT + importe → nombre + importe → consumidor final
-- [ ] Cada coincidencia con su regla; las suposiciones marcadas como tales
+- [ ] Cada coincidencia con su criterio; las suposiciones marcadas como tales
 - [ ] Cada comprobante en un solo grupo; cantidad y total iguales a la exportación
 - [ ] Cada hallazgo con un próximo paso concreto

@@ -2,7 +2,7 @@
 
 Un método para conciliar los comprobantes que emitiste en ARCA con tus propios registros de ventas, sea una planilla o un sistema. Sirve para encontrar ventas cobradas sin factura, facturas sin venta y errores de carga, sin falsas alarmas. Sin importar qué vendés, dónde y cómo cobrás. Este ejemplo tiene varios servicios de distintos precios y un punto de venta online.
 
-La conciliación la hace una IA. Vos juntás los archivos, contestás un par de preguntas y revisás el resultado.
+La conciliación la hace una IA. Vos juntás los archivos, validás lo que entendió la IA y revisás el resultado.
 
 ### 1. Juntá los archivos
 
@@ -20,7 +20,7 @@ Abrí una conversación con una IA que pueda leer archivos y ejecutar código (p
 
 > Conciliá estos comprobantes con mis ventas siguiendo instrucciones.md.
 
-### 3. Contestá sus preguntas
+### 3. Validá lo que entendió
 
 Antes de conciliar, la IA te va a mostrar qué entendió de tus archivos: qué columna es cuál, la fecha de corte, si hay ventas sin costo o comprobantes de otra persona. Corregila si algo está mal. De eso depende todo lo demás.
 
