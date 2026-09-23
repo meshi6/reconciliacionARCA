@@ -1,6 +1,6 @@
 # Conciliación Facturas ↔ Ventas
 
-Un método para conciliar los comprobantes que emitiste en ARCA con tus propios registros de ventas, sea una planilla o un sistema. Sirve para encontrar ventas cobradas sin factura, facturas sin venta y errores de carga, sin falsas alarmas. Da igual qué vendas o por dónde cobres.
+Un método para conciliar los comprobantes que emitiste en ARCA con tus propios registros de ventas, sea una planilla o un sistema. Sirve para encontrar ventas cobradas sin factura, facturas sin venta y errores de carga, sin falsas alarmas. Sin importar qué vendés, dónde y cómo cobrás. Este ejemplo tiene varios servicios de distintos precios y un punto de venta online.
 
 ---
 
