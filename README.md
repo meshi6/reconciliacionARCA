@@ -6,7 +6,7 @@ Un método para conciliar los comprobantes que emitiste en ARCA con tus propios 
 
 ## 1. Qué necesitás
 
-| Insumo | Qué es | Datos clave |
+| Input | Qué es | Datos clave |
 |---|---|---|
 | **Comprobantes emitidos** | La exportación de *Mis Comprobantes* de ARCA, o la de tu facturador, para el período: facturas *y* notas de crédito | fecha, tipo, número, CUIT/DNI y nombre del receptor, total y, si tu facturador lo guarda, la **referencia del pago** |
 | **Tus ventas** | Tu planilla o sistema de ventas, incluidos los períodos anteriores | fecha, cliente, CUIT/DNI o mail, producto o servicio, estado de pago, importe, **referencia del pago** |
