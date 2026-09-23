@@ -14,7 +14,7 @@ Un método para conciliar los comprobantes que emitiste en ARCA con tus propios 
 
 La referencia del pago es el número de operación, pedido o transacción que da el medio de cobro. Si la tenés de los dos lados, es el mejor dato para conciliar.
 
-No toques los originales. Trabajá sobre copias y dejá el resultado en un archivo **nuevo**.
+No edites los originales. Trabajá sobre copias y dejá el resultado en un archivo **nuevo**.
 
 ---
 
