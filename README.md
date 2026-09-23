@@ -1,4 +1,4 @@
-# Conciliación Facturas ↔ Inscripciones
+# Conciliación Facturas ↔ Ventas
 
 Un método paso a paso para conciliar lo que exporta un sistema de facturación contra las planillas donde se registran las ventas o inscripciones. La idea es encontrar toda venta cobrada sin factura, toda factura sin venta y todo error de carga entre las dos, sin que se cuelen falsas alarmas.
 
