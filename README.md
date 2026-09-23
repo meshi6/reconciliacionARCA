@@ -12,7 +12,7 @@ Un método para conciliar los comprobantes que emitiste en ARCA con tus propios 
 | **Tus ventas** | Tu planilla o sistema de ventas, incluidos los períodos anteriores | fecha, cliente, CUIT/DNI o mail, producto o servicio, estado de pago, importe, **referencia del pago** |
 | **Lista de precios** | Cuánto salía cada cosa en cada momento, con descuentos | sirve para ver si un importe que nadie explica parece una venta real |
 
-La referencia del pago es el número de operación, pedido o transacción que da el medio de cobro. Si la tenés de los dos lados, es el mejor dato para conciliar.
+La referencia del pago es el número de operación, pedido o transacción que da el medio de cobro y un dato clave para la conciliación.
 
 No edites los originales. Trabajá sobre copias y dejá el resultado en un archivo **nuevo**.
 
