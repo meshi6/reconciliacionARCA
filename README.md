@@ -26,6 +26,19 @@ Antes de conciliar, la IA te va a mostrar qué entendió de tus archivos: qué c
 
 Recibís un Excel nuevo; tus archivos no se tocan. La pestaña **Discrepancias** tiene un hallazgo por fila, ordenado por gravedad (🔴 alta, 🟡 media, 🟢 baja), y cada uno dice **qué hacer**: qué registro, qué campo, qué valor. Las coincidencias **aproximadas** vienen resaltadas para que decidas vos.
 
+### Probalo con el ejemplo
+
+La carpeta [`ejemplo/`](ejemplo) tiene un negocio inventado, con tres servicios de distintos precios y cobro online. Todos los datos son ficticios.
+
+| Archivo | Qué tiene |
+|---|---|
+| [`comprobantes.xlsx`](ejemplo/comprobantes.xlsx) | 15 comprobantes de marzo y abril de 2026: 14 facturas C y una nota de crédito. Columnas parecidas a las de *Mis Comprobantes*, más la referencia del pago |
+| [`ventas.xlsx`](ejemplo/ventas.xlsx) | 17 ventas con los problemas de siempre: referencias guardadas como número, importes como texto, una referencia repetida, otra mal copiada, ventas sin costo, pendientes y anteriores al corte |
+| [`precios.xlsx`](ejemplo/precios.xlsx) | Lista de precios, con un aumento en abril, y un código de descuento |
+| [`resultado-esperado.xlsx`](ejemplo/resultado-esperado.xlsx) | Lo que la IA tendría que encontrar: 9 hallazgos (3 🔴, 3 🟡, 3 🟢), las coincidencias con su criterio y los totales |
+
+Subí los tres primeros con las instrucciones y compará lo que te devuelve con `resultado-esperado.xlsx`.
+
 ### 🔒 Privacidad
 
 Tus archivos tienen nombres, CUIT, domicilios y mails de tus clientes. Antes de subirlos a una IA, fijate qué hace esa herramienta con los datos. No los subas a un repositorio y, si compartís el método, usá ejemplos inventados.
