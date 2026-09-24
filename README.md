@@ -102,8 +102,6 @@ Esperá su validación antes de seguir:
 - Si hay **comprobantes de otro contribuyente** mezclados: van aparte y no se
   concilian contra estas ventas.
 
-Anotá el total de cada grupo: los vas a necesitar para cerrar los totales.
-
 ## 2. Normalizá
 
 Casi todos los errores salen de este paso.
