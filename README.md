@@ -2,7 +2,7 @@
 
 Un método para conciliar los comprobantes que emitiste en ARCA con tus propios registros de ventas, sea una planilla o un sistema. Sirve para encontrar ventas cobradas sin factura, facturas sin venta y errores de carga, sin falsas alarmas. Sin importar qué vendés, dónde y cómo cobrás. Este ejemplo tiene varios servicios de distintos precios y un punto de venta online.
 
-La conciliación la hace una IA. Vos juntás los archivos, validás lo que entendió la IA y revisás el resultado.
+La conciliación la hace Claude, en tu computadora. Vos juntás los archivos, validás lo que entendió y revisás el resultado.
 
 ### 1. Juntá los archivos
 
@@ -14,13 +14,18 @@ La conciliación la hace una IA. Vos juntás los archivos, validás lo que enten
 
 La referencia del pago es el número de operación, pedido o transacción que da el medio de cobro y un dato clave para la conciliación.
 
-### 2. Dáselos a la IA
+### 2. Dáselos a Claude
 
-Abrí un Proyecto o Chat Nuevo en ChatGPT o Claude. Subí tus archivos y pegá el [SKILL.md](#skillmd) que está al final.
+1. Creá una carpeta en tu computadora, por ejemplo `conciliacion`, y poné adentro tus archivos.
+2. Guardá el [SKILL.md](#skillmd) que está al final en `conciliacion/.claude/skills/conciliacion-arca/SKILL.md`. La carpeta `.claude` queda oculta; en la Mac, Cmd+Shift+. la muestra en el Finder.
+3. Abrí la app de escritorio de Claude, entrá en **Code** y elegí la carpeta `conciliacion` como proyecto.
+4. Escribí: «Conciliá mis comprobantes con mis ventas».
+
+Claude trabaja sobre los archivos de tu computadora y deja el resultado en la misma carpeta.
 
 ### 3. Validá lo que entendió
 
-Antes de conciliar, la IA te va a mostrar qué entendió de tus archivos: qué columna es cuál, la fecha de corte, si hay ventas sin costo o comprobantes de otra persona. Corregila si algo está mal. De eso depende todo lo demás.
+Antes de conciliar, Claude te va a mostrar qué entendió de tus archivos: qué columna es cuál, la fecha de corte, si hay ventas sin costo o comprobantes de otra persona. Corregilo si algo está mal. De eso depende todo lo demás.
 
 ### 4. Revisá el resultado
 
@@ -35,13 +40,18 @@ La carpeta [`ejemplo/`](ejemplo) tiene un negocio inventado, con tres servicios 
 | [`comprobantes.xlsx`](ejemplo/comprobantes.xlsx) | 15 comprobantes de marzo y abril de 2026: 14 facturas C y una nota de crédito. Columnas parecidas a las de *Mis Comprobantes*, más la referencia del pago |
 | [`ventas.xlsx`](ejemplo/ventas.xlsx) | 17 ventas con los problemas de siempre: referencias guardadas como número, importes como texto, una referencia repetida, otra mal copiada, ventas sin costo, pendientes y anteriores al corte |
 | [`precios.xlsx`](ejemplo/precios.xlsx) | Lista de precios, con un aumento en abril, y un código de descuento |
-| [`resultado-esperado.xlsx`](ejemplo/resultado-esperado.xlsx) | Lo que la IA tendría que encontrar: 9 hallazgos (3 🔴, 3 🟡, 3 🟢), las coincidencias con su criterio y los totales |
+| [`resultado-esperado.xlsx`](ejemplo/resultado-esperado.xlsx) | Lo que Claude tendría que encontrar: 9 hallazgos (3 🔴, 3 🟡, 3 🟢), las coincidencias con su criterio y los totales |
 
-Subí los tres primeros con las instrucciones y compará lo que te devuelve con `resultado-esperado.xlsx`.
+Poné los tres primeros en la carpeta del paso 2 y compará lo que te devuelve con `resultado-esperado.xlsx`.
 
 ### SKILL.md
 
 ```markdown
+---
+name: conciliacion-arca
+description: Concilia los comprobantes emitidos en ARCA (facturas y notas de crédito) con los registros de ventas y arma un Excel de discrepancias. Usar cuando la persona pida conciliar facturas o comprobantes con ventas.
+---
+
 # Instrucciones: conciliación de comprobantes ARCA con ventas
 
 Vas a conciliar los comprobantes que la persona emitió en ARCA (facturas y notas de crédito) con sus registros de ventas. El objetivo es encontrar ventas cobradas sin factura, facturas sin venta y errores de carga, **sin falsas alarmas**.
