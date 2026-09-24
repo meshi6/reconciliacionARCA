@@ -16,7 +16,7 @@ La referencia del pago es el número de operación, pedido o transacción que da
 
 ### 2. Dáselos a la IA
 
-Abrí una conversación con una IA que pueda leer archivos y ejecutar código (por ejemplo, Claude). Subí tus archivos y pegá las [instrucciones para la IA](#instrucciones-para-la-ia) que están al final.
+Abrí una conversación con una IA que pueda leer archivos y ejecutar código (por ejemplo, Claude). Subí tus archivos y pegá el [SKILL.md](#skillmd) que está al final.
 
 ### 3. Validá lo que entendió
 
@@ -43,7 +43,7 @@ Subí los tres primeros con las instrucciones y compará lo que te devuelve con 
 
 Tus archivos tienen nombres, CUIT, domicilios y mails de tus clientes. Antes de subirlos a una IA, fijate qué hace esa herramienta con los datos. No los subas a un repositorio y, si compartís el método, usá ejemplos inventados.
 
-### Instrucciones para la IA
+### SKILL.md
 
 Copialas con el botón de copiar del bloque y pegalas en la conversación.
 
