@@ -94,7 +94,7 @@ Una factura que ya matcheó sale de la lista y no puede matchear con otra venta.
 
 ## 4. 🗂️ Clasificá las discrepancias
 
-| Qué sobra | Gravedad |
+| Discrepancias | Gravedad |
 |---|---|
 | Una misma referencia de pago en ventas de **dos clientes distintos** | 🔴 **Alta**: casi siempre a uno le pisaron el dato y aparece también como cobrado sin factura |
 | Venta cobrada sin factura | 🔴 **Alta** |
