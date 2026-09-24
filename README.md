@@ -39,10 +39,6 @@ La carpeta [`ejemplo/`](ejemplo) tiene un negocio inventado, con tres servicios 
 
 Subí los tres primeros con las instrucciones y compará lo que te devuelve con `resultado-esperado.xlsx`.
 
-### 🔒 Privacidad
-
-Tus archivos tienen nombres, CUIT, domicilios y mails de tus clientes. Antes de subirlos a una IA, fijate qué hace esa herramienta con los datos. No los subas a un repositorio y, si compartís el método, usá ejemplos inventados.
-
 ### SKILL.md
 
 ```markdown
