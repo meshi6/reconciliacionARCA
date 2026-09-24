@@ -42,7 +42,7 @@ Revisá también algunas de la pestaña **Coincidencias**, que viene ordenada de
 Cada vez que le enseñás algo, Claude te propone dónde guardarlo y lo guarda sólo cuando lo validás:
 
 - **Lo propio de tu negocio** (qué columna es la referencia, un cliente que paga por otro, un caso que no es error) va al `CLAUDE.md` de la carpeta, que Claude lee cada vez que abrís el proyecto.
-- **Lo que cambia el método** (un criterio nuevo, un tipo de falsa alarma) va al `SKILL.md`. Antes de guardarlo, Claude vuelve a correr el ejemplo y lo compara con `resultado-esperado.xlsx`. Si el resultado cambia sin que debiera, el cambio no se guarda.
+- **Lo que cambia el método** (un criterio nuevo, un tipo de falsa alarma) va al `SKILL.md`. Antes de guardarlo, Claude vuelve a correr el ejemplo y lo compara con `resultado-esperado.xlsx`. Si el resultado cambia sin que debiera, el cambio no se guarda. Para guardarlo, Claude te va a pedir permiso para editar el `SKILL.md`: aceptalo.
 
 Así, cada corrida marca menos falsas alarmas que la anterior.
 
@@ -144,12 +144,18 @@ En cada coincidencia anotá con qué criterio se encontró.
 - 🟡 **Media**: factura sin venta, por un importe que no está en la lista de
   precios. Que busque la referencia en su medio de cobro.
 - 🟡 **Media**: factura a un nombre que no está en las ventas. Suele ser alguien
-  que pagó por otra persona.
+  que pagó por otra persona. Si una venta sin factura, del mismo importe y
+  fecha, tiene una nota que lo indica, informá las dos como un solo hallazgo y
+  marcalo como suposición.
 - 🟡 **Media**: consumidor final conciliado sólo por fecha e importe.
 - 🟢 **Baja**: referencia vacía o mal copiada en las ventas. Indicá el valor
   correcto.
 - 🟢 **Baja**: nota de crédito seguida de una factura reemitida. Anotala para que
   nadie la vuelva a levantar.
+- 🟢 **Baja**: factura emitida tarde. La venta cobrada tiene factura, pero se
+  emitió más de 30 días después de la fecha de la venta. Indicá las dos fechas
+  y los días de diferencia. La coincidencia sigue valiendo: la venta cuenta
+  como conciliada.
 
 **No marques como error:** dos facturas a la misma persona (suelen ser dos
 compras: mirá productos y fechas), una nota de crédito más una factura nueva (es
@@ -166,7 +172,8 @@ venta cobrada dentro del alcance está conciliada, es sin costo o está marcada.
 
 ## 6. Entregá
 
-- Un `.xlsx` nuevo, llamado `conciliacion-AAAA-MM-DD.xlsx`, con:
+- Un `.xlsx` nuevo, llamado `conciliacion-AAAA-MM-DD.xlsx`. Si ya existe,
+  agregá `-v2`, `-v3`…: nunca reemplaces una conciliación anterior. Con:
   - **Discrepancias:** un hallazgo por fila (gravedad, qué pasa, cliente,
     importe, detalle con comprobante, referencia y fecha, y **qué hacer**),
     ordenado por gravedad. Cada «qué hacer» es concreto: qué registro, qué
