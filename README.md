@@ -21,7 +21,7 @@ La referencia del pago es el número de operación, pedido o transacción que da
 3. Abrí la app de escritorio de Claude, entrá en **Code** y elegí la carpeta `conciliacion` como proyecto.
 4. Escribí: «Conciliá mis comprobantes con mis ventas».
 
-Claude trabaja sobre los archivos de tu computadora y deja el resultado en la misma carpeta. Mientras tanto, cebate un mate 🧉 y comete una medialuna 🥐.
+Claude trabaja sobre los archivos de tu computadora y deja el resultado en la misma carpeta. 🧉 🥐
 
 ### 3. Validá lo que entendió
 
