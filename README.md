@@ -31,6 +31,19 @@ Antes de conciliar, Claude te va a mostrar qué entendió de tus archivos: qué 
 
 Recibís un Excel nuevo. La pestaña **Discrepancias** tiene un hallazgo por fila, ordenado por gravedad (🔴 alta, 🟡 media, 🟢 baja), y cada uno dice **qué hacer**: qué registro, qué campo, qué valor. Las coincidencias **aproximadas** vienen resaltadas para que decidas vos.
 
+### 5. Corregí, volvé a correr y enseñale
+
+1. **Corregí tus registros** siguiendo la columna **qué hacer**: cargá las referencias que faltan, emití las facturas pendientes.
+2. **Contale a Claude lo que decidiste** sobre las aproximadas y sobre lo que no era un error. Por ejemplo: «La factura 6 es de Julián Castro, confirmado» o «Marta Benítez paga las ventas de Nicolás Benítez».
+3. **Volvé a correr la conciliación** con los archivos actualizados. Claude la compara con la anterior y te dice qué se resolvió, qué sigue y qué es nuevo.
+
+Cada vez que le enseñás algo, Claude te propone dónde guardarlo y lo guarda sólo cuando lo validás:
+
+- **Lo propio de tu negocio** (qué columna es la referencia, un cliente que paga por otro, un caso que no es error) va al `CLAUDE.md` de la carpeta, que Claude lee cada vez que abrís el proyecto.
+- **Lo que cambia el método** (un criterio nuevo, un tipo de falsa alarma) va al `SKILL.md`.
+
+Así, cada corrida marca menos falsas alarmas que la anterior.
+
 ### Probalo con el ejemplo
 
 La carpeta [`ejemplo/`](ejemplo) tiene un negocio inventado, con tres servicios de distintos precios y cobro online. Todos los datos son ficticios.
@@ -71,6 +84,9 @@ alarmas**.
 - Los importes vienen en formato argentino: punto de miles, coma decimal.
 
 ## 1. Antes de conciliar, validá con la persona
+
+Si el `CLAUDE.md` del proyecto ya tiene definiciones de corridas anteriores
+(columnas, casos conocidos), partí de esas, pero mostralas igual.
 
 Leé los archivos y mostrale a la persona, en una lista corta, lo que entendiste.
 Esperá su validación antes de seguir:
@@ -150,7 +166,7 @@ venta cobrada dentro del alcance está conciliada, es sin costo o está marcada.
 
 ## 6. Entregá
 
-- Un `.xlsx` nuevo con:
+- Un `.xlsx` nuevo, llamado `conciliacion-AAAA-MM-DD.xlsx`, con:
   - **Discrepancias:** un hallazgo por fila (gravedad, qué pasa, cliente,
     importe, detalle con comprobante, referencia y fecha, y **qué hacer**),
     ordenado por gravedad. Cada «qué hacer» es concreto: qué registro, qué
@@ -161,6 +177,22 @@ venta cobrada dentro del alcance está conciliada, es sin costo o está marcada.
 - En el chat, un resumen corto: total por grupo, si los totales cierran y
   cuántos hallazgos hay de cada gravedad.
 - Si no podés generar archivos, entregá la tabla de Discrepancias en el chat.
+
+## 7. Corridas siguientes y aprendizajes
+
+- Si en la carpeta hay una conciliación anterior, leela junto con su Log. En
+  Discrepancias agregá una columna **Estado** (nueva o sigue) y en el resumen
+  del chat listá también las que se resolvieron.
+- No vuelvas a marcar lo que la persona ya explicó o decidió. Si aplicás una
+  decisión anterior, anotalo en el Log.
+- Cuando la persona te corrija o decida algo, proponé dónde guardarlo:
+  - si es propio de su negocio (qué columna es cuál, un cliente que paga por
+    otro, un caso que no es error), en el `CLAUDE.md` del proyecto, bajo
+    «Conciliación»;
+  - si cambia el método (un criterio nuevo, un tipo de falsa alarma), en este
+    `SKILL.md`.
+- Mostrá el texto exacto que vas a agregar y escribilo sólo después de que la
+  persona lo valide.
 
 ## 📋 Validación antes de entregar
 
@@ -174,4 +206,6 @@ venta cobrada dentro del alcance está conciliada, es sin costo o está marcada.
 - [ ] Cada comprobante en un solo grupo; cantidad y total iguales a la
       exportación
 - [ ] Cada hallazgo con un próximo paso concreto
+- [ ] Comparada con la corrida anterior, si la hay
+- [ ] Lo aprendido, guardado sólo después de la validación de la persona
 ```
