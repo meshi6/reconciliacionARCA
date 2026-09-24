@@ -1,8 +1,10 @@
-# Conciliación Facturas ↔ Ventas
+<img width="176" height="150" alt="arquitectura_conciliacion_arca_es_v2" src="https://github.com/user-attachments/assets/942c27d4-ce76-4937-9054-e85107779925" /># Conciliación Facturas ↔ Ventas
 
 Un método para conciliar los comprobantes que emitiste en ARCA 🇦🇷 con tus propios registros de ventas, sea una planilla o un sistema. Sirve para encontrar ventas cobradas sin factura, facturas sin venta y errores de carga, sin falsas alarmas. Sin importar qué vendés, dónde y cómo cobrás. Este ejemplo tiene varios servicios de distintos precios y un punto de venta online.
 
 La conciliación la hace Claude y se trabaja en local: tus archivos, la skill, la memoria y los resultados quedan en una carpeta de tu computadora, sin subir nada a un chat. Claude sí envía a Anthropic lo que lee para poder procesarlo. Vos juntás los archivos, validás lo que entendió y revisás el resultado.
+
+![Uploading<img width="2748" height="2336" alt="arquitectura_conciliacion_arca_es_v2" src="https://github.com/user-attachments/assets/c1701a33-acb8-42b1-a8a2-f53954db5e17" /> arquitectura_conciliacion_arca_es_v2.svg…]()
 
 ### 1. Juntá los archivos
 
