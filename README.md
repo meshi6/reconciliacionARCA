@@ -25,7 +25,7 @@ Claude trabaja sobre los archivos de tu computadora y deja el resultado en la mi
 
 ### 3. Validá lo que entendió
 
-Antes de conciliar, Claude te va a mostrar qué entendió de tus archivos: qué columna es cuál, la fecha de corte, si hay ventas sin costo o comprobantes de otra persona. Corregilo si algo está mal. De eso depende todo lo demás.
+Antes de conciliar, Claude te va a mostrar qué entendió de tus archivos: qué columna es cuál, la fecha de corte, si hay ventas sin costo o comprobantes de otra persona. ⚠️ Corregilo si algo está mal. De eso depende todo lo demás.
 
 ### 4. Revisá el resultado
 
@@ -96,7 +96,7 @@ Una factura que ya matcheó sale de la lista y no puede matchear con otra venta.
 4. **Nombre + importe exacto.** Al menos **dos palabras** del nombre de la venta tienen que estar en el de la factura. No exijas el nombre entero (los segundos nombres lo rompen) ni concilies sólo por nombre (un apellido común más un precio común junta a dos personas distintas).
 5. **Consumidor final sin identificar.** Sólo por referencia de pago. Si nada más coinciden fecha e importe, y ese importe aparece una sola vez en el período, es **aproximado**: va como suposición, no como dato, y resaltado con otro color para que la persona decida.
 
-## 4. 🗂️ Clasificá las discrepancias
+## 4. Clasificá las discrepancias
 
 | Discrepancias | Gravedad |
 |---|---|
