@@ -24,7 +24,7 @@ Antes de conciliar, la IA te va a mostrar qué entendió de tus archivos: qué c
 
 ### 4. Revisá el resultado
 
-Recibís un Excel nuevo; tus archivos no se tocan. La pestaña **Discrepancias** tiene un hallazgo por fila, ordenado por gravedad (🔴 alta, 🟡 media, 🟢 baja), y cada uno dice **qué hacer**: qué registro, qué campo, qué valor. Las coincidencias **aproximadas** vienen resaltadas para que decidas vos.
+Recibís un Excel nuevo. La pestaña **Discrepancias** tiene un hallazgo por fila, ordenado por gravedad (🔴 alta, 🟡 media, 🟢 baja), y cada uno dice **qué hacer**: qué registro, qué campo, qué valor. Las coincidencias **aproximadas** vienen resaltadas para que decidas vos.
 
 ### Probalo con el ejemplo
 
