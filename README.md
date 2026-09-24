@@ -4,7 +4,7 @@ Un método para conciliar los comprobantes que emitiste en ARCA 🇦🇷 con tus
 
 La conciliación la hace Claude y se trabaja en local: tus archivos, la skill, la memoria y los resultados quedan en una carpeta de tu computadora, sin subir nada a un chat. Claude sí envía a Anthropic lo que lee para poder procesarlo. Vos juntás los archivos, validás lo que entendió y revisás el resultado.
 
-<img width="176" height="150" alt="arquitectura_conciliacion_arca_es_v2" src="https://github.com/user-attachments/assets/942c27d4-ce76-4937-9054-e85107779925" />
+<img width="528" height="450" alt="arquitectura_conciliacion_arca_es_v2" src="https://github.com/user-attachments/assets/942c27d4-ce76-4937-9054-e85107779925" />
 
 ### 1. Juntá los archivos
 
