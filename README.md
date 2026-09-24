@@ -50,7 +50,7 @@ Copialas con el botón de copiar del bloque y pegalas en la conversación.
 ```markdown
 # Instrucciones: conciliación de comprobantes ARCA con ventas
 
-Vas a conciliar los comprobantes que la persona emitió en ARCA (facturas y notas de crédito) con sus registros de ventas. El objetivo es encontrar ventas cobradas sin factura, facturas sin venta y errores de carga, **sin falsas alarmas**. Hablale en castellano rioplatense, con voseo.
+Vas a conciliar los comprobantes que la persona emitió en ARCA (facturas y notas de crédito) con sus registros de ventas. El objetivo es encontrar ventas cobradas sin factura, facturas sin venta y errores de carga, **sin falsas alarmas**.
 
 ## Criterios generales
 
