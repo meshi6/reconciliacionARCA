@@ -92,7 +92,7 @@ Una factura que ya matcheó sale de la lista y no puede matchear con otra venta.
 4. **Nombre + importe exacto.** Al menos **dos palabras** del nombre de la venta tienen que estar en el de la factura. No exijas el nombre entero (los segundos nombres lo rompen) ni concilies sólo por nombre (un apellido común más un precio común junta a dos personas distintas).
 5. **Consumidor final sin identificar.** Sólo por referencia de pago. Si nada más coinciden fecha e importe, y ese importe aparece una sola vez en el período, es **aproximado**: va como suposición, no como dato, y resaltado con otro color para que la persona decida.
 
-## 4. 🗂️ Clasificá lo que sobra
+## 4. 🗂️ Clasificá las discrepancias
 
 | Qué sobra | Gravedad |
 |---|---|
