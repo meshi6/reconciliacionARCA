@@ -33,18 +33,18 @@ Recibís un Excel nuevo. La pestaña **Discrepancias** tiene un hallazgo por fil
 
 Revisá también algunas de la pestaña **Coincidencias**, que viene ordenada de la más débil a la más firme. Las encontradas por CUIT/DNI + importe o por nombre + importe pueden juntar a dos personas distintas, y un error ahí esconde una discrepancia real. Las encontradas por referencia no hace falta revisarlas.
 
-### 5. Corregí, volvé a correr y enseñale
+### 5. Corregí, volvé a ejecutar y enseñale
 
 1. **Corregí tus registros** siguiendo la columna **qué hacer**: cargá las referencias que faltan, emití las facturas pendientes.
 2. **Contale a Claude lo que decidiste** sobre las aproximadas y sobre lo que no era un error. Por ejemplo: «La factura 6 es de Julián Castro, confirmado» o «Marta Benítez paga las ventas de Nicolás Benítez».
-3. **Volvé a correr la conciliación** con los archivos actualizados. Corré la conciliación completa, no sólo lo que corregiste: un cambio puede mover otras coincidencias y los totales tienen que cerrar sobre todo el período. Claude la compara con la anterior y te dice qué se resolvió, qué sigue y qué es nuevo.
+3. **Volvé a ejecutar la conciliación** con los archivos actualizados. Ejecutá la conciliación completa, no sólo lo que corregiste: un cambio puede mover otras coincidencias y los totales tienen que cerrar sobre todo el período. Claude la compara con la anterior y te dice qué se resolvió, qué sigue y qué es nuevo.
 
 Cada vez que le enseñás algo, Claude te propone dónde guardarlo y lo guarda sólo cuando lo validás:
 
 - **Lo propio de tu negocio** (qué columna es la referencia, un cliente que paga por otro, un caso que no es error) va al `CLAUDE.md` de la carpeta, que Claude lee cada vez que abrís el proyecto.
-- **Lo que cambia el método** (un criterio nuevo, un tipo de falsa alarma) va al `SKILL.md`. Antes de guardarlo, Claude vuelve a correr el ejemplo y lo compara con `resultado-esperado.xlsx`. Si el resultado cambia sin que debiera, el cambio no se guarda. Para guardarlo, Claude te va a pedir permiso para editar el `SKILL.md`: aceptalo.
+- **Lo que cambia el método** (un criterio nuevo, un tipo de falsa alarma) va al `SKILL.md`. Antes de guardarlo, Claude vuelve a ejecutar el ejemplo y lo compara con `resultado-esperado.xlsx`. Si el resultado cambia sin que debiera, el cambio no se guarda. Para guardarlo, Claude te va a pedir permiso para editar el `SKILL.md`: aceptalo.
 
-Así, cada corrida marca menos falsas alarmas que la anterior.
+Así, cada ejecución marca menos falsas alarmas que la anterior.
 
 ### Probalo con el ejemplo
 
@@ -87,7 +87,7 @@ alarmas**.
 
 ## 1. Antes de conciliar, validá con la persona
 
-Si el `CLAUDE.md` del proyecto ya tiene definiciones de corridas anteriores
+Si el `CLAUDE.md` del proyecto ya tiene definiciones de ejecuciones anteriores
 (columnas, casos conocidos), partí de esas, pero mostralas igual.
 
 Leé los archivos y mostrale a la persona, en una lista corta, lo que entendiste.
@@ -188,7 +188,7 @@ venta cobrada dentro del alcance está conciliada, es sin costo o está marcada.
   CUIT/DNI + importe o por nombre + importe para que la persona las revise.
 - Si no podés generar archivos, entregá la tabla de Discrepancias en el chat.
 
-## 7. Corridas siguientes y aprendizajes
+## 7. Ejecuciones siguientes y aprendizajes
 
 - Conciliá siempre todo el período, no sólo lo que la persona corrigió: un
   cambio puede mover otras coincidencias y los totales tienen que cerrar.
@@ -205,12 +205,12 @@ venta cobrada dentro del alcance está conciliada, es sin costo o está marcada.
     `SKILL.md`.
 - Mostrá el texto exacto que vas a agregar y escribilo sólo después de que la
   persona lo valide.
-- Antes de guardar un cambio en este `SKILL.md`, probalo: corré la conciliación
-  con los archivos de `ejemplo/`, usando sólo este método y no las definiciones
-  del `CLAUDE.md`, y comparala con `ejemplo/resultado-esperado.xlsx`. Si da
-  distinto y no debía, no guardes el cambio. Si el cambio tiene que cambiar el
-  resultado, mostrá la diferencia y actualizá `resultado-esperado.xlsx` sólo
-  con la validación de la persona.
+- Antes de guardar un cambio en este `SKILL.md`, probalo: ejecutá la
+  conciliación con los archivos de `ejemplo/`, usando sólo este método y no las
+  definiciones del `CLAUDE.md`, y comparala con
+  `ejemplo/resultado-esperado.xlsx`. Si da distinto y no debía, no guardes el
+  cambio. Si el cambio tiene que cambiar el resultado, mostrá la diferencia y
+  actualizá `resultado-esperado.xlsx` sólo con la validación de la persona.
 - Nunca mezcles los archivos de `ejemplo/` con los de la persona.
 
 ## 📋 Validación antes de entregar
@@ -225,7 +225,7 @@ venta cobrada dentro del alcance está conciliada, es sin costo o está marcada.
 - [ ] Cada comprobante en un solo grupo; cantidad y total iguales a la
       exportación
 - [ ] Cada hallazgo con un próximo paso concreto
-- [ ] Comparada con la corrida anterior, si la hay
+- [ ] Comparada con la ejecución anterior, si la hay
 - [ ] Lo aprendido, guardado sólo después de la validación de la persona
 - [ ] Si cambió este `SKILL.md`, el ejemplo da el resultado esperado
 ```
