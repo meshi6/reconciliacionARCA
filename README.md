@@ -45,8 +45,6 @@ Tus archivos tienen nombres, CUIT, domicilios y mails de tus clientes. Antes de 
 
 ### SKILL.md
 
-Copialas con el botón de copiar del bloque y pegalas en la conversación.
-
 ```markdown
 # Instrucciones: conciliación de comprobantes ARCA con ventas
 
