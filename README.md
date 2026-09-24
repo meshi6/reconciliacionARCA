@@ -70,7 +70,7 @@ Leé los archivos y mostrale a la persona, en una lista corta, lo que entendiste
 - Si hay **ventas sin costo** (bonificadas, cortesías): no llevan factura; se listan, pero no se marcan.
 - Si hay **comprobantes de otro contribuyente** mezclados: van aparte y no se concilian contra estas ventas.
 
-Anotá los conteos de cada grupo: los vas a necesitar para cerrar los totales.
+Anotá el total de cada grupo: los vas a necesitar para cerrar los totales.
 
 ## 2. Normalizá
 
