@@ -16,7 +16,7 @@ La referencia del pago es el número de operación, pedido o transacción que da
 
 ### 2. Dáselos a la IA
 
-Abrí una conversación con una IA que pueda leer archivos y ejecutar código (por ejemplo, Claude). Subí tus archivos y pegá el [SKILL.md](#skillmd) que está al final.
+Abrí un Proyecto o Chat Nuevo en ChatGPT o Claude. Subí tus archivos y pegá el [SKILL.md](#skillmd) que está al final.
 
 ### 3. Validá lo que entendió
 
