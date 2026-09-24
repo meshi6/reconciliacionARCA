@@ -116,7 +116,7 @@ Cada comprobante tiene que caer en **un solo grupo**: conciliado, de otro contri
   - **Discrepancias:** un hallazgo por fila (gravedad, qué pasa, cliente, importe, detalle con comprobante, referencia y fecha, y **qué hacer**), ordenado por gravedad. Cada «qué hacer» es concreto: qué registro, qué campo, qué valor.
   - Las pestañas de apoyo que hagan falta: por ejemplo, las coincidencias con el criterio de cada una, o los comprobantes de otro contribuyente.
   - **Log:** qué encontraste y por qué el resultado da lo que da.
-- En el chat, un resumen corto: conteos por grupo, si los totales cierran y cuántos hallazgos hay de cada gravedad.
+- En el chat, un resumen corto: total por grupo, si los totales cierran y cuántos hallazgos hay de cada gravedad.
 - Si no podés generar archivos, entregá la tabla de Discrepancias en el chat.
 
 ## 📋 Validación antes de entregar
