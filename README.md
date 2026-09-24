@@ -1,6 +1,6 @@
 # Conciliación Facturas ↔ Ventas
 
-Un método para conciliar los comprobantes que emitiste en ARCA con tus propios registros de ventas, sea una planilla o un sistema. Sirve para encontrar ventas cobradas sin factura, facturas sin venta y errores de carga, sin falsas alarmas. Sin importar qué vendés, dónde y cómo cobrás. Este ejemplo tiene varios servicios de distintos precios y un punto de venta online.
+Un método para conciliar los comprobantes que emitiste en ARCA 🇦🇷 con tus propios registros de ventas, sea una planilla o un sistema. Sirve para encontrar ventas cobradas sin factura, facturas sin venta y errores de carga, sin falsas alarmas. Sin importar qué vendés, dónde y cómo cobrás. Este ejemplo tiene varios servicios de distintos precios y un punto de venta online.
 
 La conciliación la hace Claude y se trabaja en local: tus archivos, la skill, la memoria y los resultados quedan en una carpeta de tu computadora, sin subir nada a un chat. Claude sí envía a Anthropic lo que lee para poder procesarlo. Vos juntás los archivos, validás lo que entendió y revisás el resultado.
 
@@ -21,7 +21,7 @@ La referencia del pago es el número de operación, pedido o transacción que da
 3. Abrí la app de escritorio de Claude, entrá en **Code** y elegí la carpeta `conciliacion` como proyecto.
 4. Escribí: «Conciliá mis comprobantes con mis ventas».
 
-Claude trabaja sobre los archivos de tu computadora y deja el resultado en la misma carpeta.
+Claude trabaja sobre los archivos de tu computadora y deja el resultado en la misma carpeta. Mientras tanto, cebate un mate 🧉 y comete una medialuna 🥐.
 
 ### 3. Validá lo que entendió
 
