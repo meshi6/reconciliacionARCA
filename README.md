@@ -213,7 +213,7 @@ venta cobrada dentro del alcance está conciliada, es sin costo o está marcada.
   actualizá `resultado-esperado.xlsx` sólo con la validación de la persona.
 - Nunca mezcles los archivos de `ejemplo/` con los de la persona.
 
-## 📋 Validación antes de entregar
+## 📋 Validación antes de la entrega
 
 - [ ] Originales sin tocar
 - [ ] Columnas, fecha de corte, ventas sin costo y otros contribuyentes
