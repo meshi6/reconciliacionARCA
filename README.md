@@ -35,7 +35,7 @@ Recibís un Excel nuevo. La pestaña **Discrepancias** tiene un hallazgo por fil
 
 1. **Corregí tus registros** siguiendo la columna **qué hacer**: cargá las referencias que faltan, emití las facturas pendientes.
 2. **Contale a Claude lo que decidiste** sobre las aproximadas y sobre lo que no era un error. Por ejemplo: «La factura 6 es de Julián Castro, confirmado» o «Marta Benítez paga las ventas de Nicolás Benítez».
-3. **Volvé a correr la conciliación** con los archivos actualizados. Claude la compara con la anterior y te dice qué se resolvió, qué sigue y qué es nuevo.
+3. **Volvé a correr la conciliación** con los archivos actualizados. Corré la conciliación completa, no sólo lo que corregiste: un cambio puede mover otras coincidencias y los totales tienen que cerrar sobre todo el período. Claude la compara con la anterior y te dice qué se resolvió, qué sigue y qué es nuevo.
 
 Cada vez que le enseñás algo, Claude te propone dónde guardarlo y lo guarda sólo cuando lo validás:
 
@@ -180,6 +180,8 @@ venta cobrada dentro del alcance está conciliada, es sin costo o está marcada.
 
 ## 7. Corridas siguientes y aprendizajes
 
+- Conciliá siempre todo el período, no sólo lo que la persona corrigió: un
+  cambio puede mover otras coincidencias y los totales tienen que cerrar.
 - Si en la carpeta hay una conciliación anterior, leela junto con su Log. En
   Discrepancias agregá una columna **Estado** (nueva o sigue) y en el resumen
   del chat listá también las que se resolvieron.
